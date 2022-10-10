@@ -1,6 +1,9 @@
 {
-  "devDependencies": {
-    "@types/node": "^18.8.3",
+  "name": "mcstatus.js",
+  "version": "1.1.2",
+  "description": "A nodejs module for getting minecraft server status",
+  "main": "dist/index.js",
+  "dependencies": {
     "ajv": "^6.12.6",
     "asn1": "^0.2.6",
     "assert-plus": "^1.0.0",
@@ -49,14 +52,6 @@
     "uuid": "^3.4.0",
     "verror": "^1.10.0"
   },
-  "name": "mcstatus",
-  "description": "An nodejs module for getting minecraft server status",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
-  ],
   "scripts": {
     "test": "node ."
   },
@@ -65,16 +60,20 @@
     "url": "git+https://github.com/Sohom829/mcstatus.git"
   },
   "keywords": [
-    "api",
-    "mcstatus",
-    "minecraft",
-    "status",
-    "url"
+    "API",
+    "Server",
+    "Status",
+    "Minecraft"
   ],
   "author": "Mohtasim Alam Sohom",
   "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "files": "/dist",
   "bugs": {
     "url": "https://github.com/Sohom829/mcstatus/issues"
   },
-  "homepage": "https://github.com/Sohom829/mcstatus#readme"
+  "homepage": "https://github.com/Sohom829/mcstatus#readme",
+  "devDependencies": {
+    "@types/node": "^18.8.3"
+  }
 }
