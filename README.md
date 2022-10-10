@@ -74,8 +74,8 @@ ping('play.endercraftbd.net',  25565, response => {
 ```
 
 # IMPORTANT
-- Make sure to have **enable-query=true** set in your **server.properties** to use this function at all.
-- If you have query-plugins: true set in your bukkit.yml, also the installed plugins.
+- Make sure to have **enable-query=true** set in your **server.properties** to use query function at all.
+- If you have query-plugins: true set in your bukkit.yml, also the installed plugins in query.
 
 
 
