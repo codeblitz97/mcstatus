@@ -101,3 +101,7 @@ ping('play.endercraftbd.net', true, 25565, response => {
 - Fixed README.md
 - Fixed bugs
 - Added JSON customization
+# 2.0.0
+- Updated file structure
+- Fixed thousands bugs
+- Fixed the intellisense
