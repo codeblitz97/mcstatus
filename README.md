@@ -17,15 +17,15 @@ npm i mcstatus.js@latest
 - Profile (Returs user information about server)
 
 # SYNTAX
-query(ip: string, port: number, callback: any)
+query(ip: string, port: number, JSON: boolean, callback: any)
 
-ping(ip: string, port: number, callback: any)
+ping(ip: string, port: number, JSON: boolean, callback: any)
 
-favicon(ip: string, port: number, callback: any)
+favicon(ip: string, port: number, JSON: boolean, callback: any)
 
-uuid(username: string, callback: any)
+uuid(username: string, JSON: boolean, callback: any)
 
-profile(uuid: string, callback: any)
+profile(uuid: string, JSON: boolean, callback: any)
 
 
 # EXAMPLE
@@ -34,7 +34,7 @@ profile(uuid: string, callback: any)
 ```js
 const { query } = require('mcstatus.js');
 
-query('play.endercraftbd.net',  25565, response => {
+query('play.endercraftbd.net',  25565, true, response => {
     console.log(response);
 });
 ```
@@ -43,7 +43,7 @@ query('play.endercraftbd.net',  25565, response => {
 ```js
 const { ping } = require('mcstatus.js');
 
-ping('play.endercraftbd.net',  25565, response => {
+ping('play.endercraftbd.net', 25565, true, response => {
     console.log(response);
 });
 ```
@@ -51,7 +51,7 @@ ping('play.endercraftbd.net',  25565, response => {
 ```js
 const { uuid } = require('mcstatus.js');
 
-uuid('Sohom829', response => {
+uuid('Sohom829', true, response => {
     console.log(response);
 });
 ```
@@ -59,7 +59,7 @@ uuid('Sohom829', response => {
 ```js
 const { profile } = require('mcstatus.js');
 
-profile('anyuuid', response => {
+profile('anyuuid', true, response => {
     console.log(response);
 });
 ```
@@ -68,7 +68,7 @@ profile('anyuuid', response => {
 ```js
 const { favicon } = require('mcstatus.js');
 
-ping('play.endercraftbd.net',  25565, response => {
+ping('play.endercraftbd.net', true, 25565, response => {
     console.log(response);
 });
 ```
