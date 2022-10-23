@@ -1,6 +1,6 @@
 # MCSTATUS
 
- An nodejs module for getting minecraft server status
+An nodejs module for getting minecraft server status
 
 ## INSTALLATION
 
@@ -35,40 +35,40 @@ profile(uuid: string, JSON: boolean, callback: any)
 ### Query
 
 ```js
-const { query } = require('mcstatus.js');
+const { query } = require("mcstatus.js");
 
-query('play.endercraftbd.net',  25565, true, response => {
-    console.log(response);
+query("play.endercraftbd.net", 25565, true, (response) => {
+  console.log(response);
 });
 ```
 
 ### Ping
 
 ```js
-const { ping } = require('mcstatus.js');
+const { ping } = require("mcstatus.js");
 
-ping('play.endercraftbd.net', 25565, true, response => {
-    console.log(response);
+ping("play.endercraftbd.net", 25565, true, (response) => {
+  console.log(response);
 });
 ```
 
 ### UUID
 
 ```js
-const { uuid } = require('mcstatus.js');
+const { uuid } = require("mcstatus.js");
 
-uuid('Sohom829', true, response => {
-    console.log(response);
+uuid("Sohom829", true, (response) => {
+  console.log(response);
 });
 ```
 
 ### Profile
 
 ```js
-const { profile } = require('mcstatus.js');
+const { profile } = require("mcstatus.js");
 
-profile('anyuuid', true, response => {
-    console.log(response);
+profile("anyuuid", true, (response) => {
+  console.log(response);
 });
 ```
 
@@ -77,10 +77,10 @@ profile('anyuuid', true, response => {
 ### Favicon
 
 ```js
-const { favicon } = require('mcstatus.js');
+const { favicon } = require("mcstatus.js");
 
-ping('play.endercraftbd.net', true, 25565, response => {
-    console.log(response);
+ping("play.endercraftbd.net", true, 25565, (response) => {
+  console.log(response);
 });
 ```
 
@@ -107,3 +107,10 @@ ping('play.endercraftbd.net', true, 25565, response => {
 - Updated file structure
 - Fixed thousands bugs
 - Fixed the intellisense
+
+## 2.1.0
+
+- Fixed tons of BUGS
+- Improved Performance
+- API Update
+- Typing Error Fixed

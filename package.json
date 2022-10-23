@@ -1,6 +1,6 @@
 {
   "name": "mcstatus.js",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A nodejs module for getting minecraft server status",
   "main": "dist/index.js",
   "dependencies": {
